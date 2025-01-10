@@ -24,7 +24,7 @@ export const CartPreview = () => {
               <div className="flex-1">
                 <h3 className="text-sm font-medium">{item.name}</h3>
                 <p className="text-sm text-gray-600">
-                  {item.quantity} x ${item.price}
+                  {item.quantity} x HUF{item.price}
                 </p>
               </div>
               <Button
@@ -39,7 +39,7 @@ export const CartPreview = () => {
           <div className="mt-4 pt-4 border-t">
             <div className="flex justify-between items-center mb-4">
               <span className="font-bold">Összesen:</span>
-              <span className="font-bold">${total.toFixed(2)}</span>
+              <span className="font-bold">HUF{total.toFixed(2)}</span>
             </div>
             <Button className="w-full">Fizetés</Button>
           </div>
