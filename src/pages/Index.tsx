@@ -4,6 +4,7 @@ import { products } from '../data/products';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { TextSection } from '../components/TextSection';
+import { FAQ } from '../components/FAQ';
 import { Footer } from '../components/Footer';
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       </main>
 
       <TextSection />
+      <FAQ />
       <Footer />
       <CartPreview />
     </div>
