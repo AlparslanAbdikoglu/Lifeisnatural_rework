@@ -11,7 +11,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const addItem = useCart((state) => state.addItem);
 
   return (
-    <div className="product-card bg-white rounded-lg overflow-hidden">
+    <div className="product-card bg-white rounded-lg overflow-hidden shadow-lg">
       <img
         src={product.image}
         alt={product.name}
@@ -22,14 +22,15 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         <p className="text-sm text-gray-600 mb-4">{product.description}</p>
         <div className="flex items-center justify-between">
           <span className="text-lg font-bold">${product.price}</span>
-          <Button
+          <Button 
+            variant="green"  // defined in button
             onClick={() => {
               addItem(product);
             }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 bg-green-500 text-white hover:bg-green-600 rounded-md p-2"
           >
             <ShoppingCart className="h-4 w-4" />
-            Add to Cart
+            Kosárba teszem
           </Button>
         </div>
       </div>
