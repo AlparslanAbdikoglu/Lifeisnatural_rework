@@ -16,7 +16,7 @@ export const Hero = () => {
             <p className="text-lg md:text-xl text-gray-950 mb-8">
               A CBD olaj azonban kevesebb mint 0,2% THC-t tartalmaz, vagy egyáltalán nem tartalmaz THC-t. Általában más olajokkal, például kendermagolajjal keverik. Nem pszichoaktív és nem okoz függőséget, de a fogyasztók számos jelentés szerint pozitív előnyökről számolnak be.
             </p>
-            <Link to="/products" target="_blank" rel="noopener noreferrer">
+            <Link to="/products">
               <Button variant="green"size="lg" className="animate-fade-in">
                 Termék megtekintése
               </Button>
