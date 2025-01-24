@@ -10,7 +10,7 @@ export const FAQ = () => {
     <div className="bg-white py-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-          Frequently Asked Questions
+          Gyakran Ismételt Kérdések:
         </h2>
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
