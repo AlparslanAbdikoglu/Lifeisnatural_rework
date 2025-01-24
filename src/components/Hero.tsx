@@ -1,5 +1,4 @@
 import { Button } from './ui/button';
-import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   return (
@@ -8,30 +7,25 @@ export const Hero = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              CBD Testnek és Léleknek
+              Discover Amazing Tech Products
             </h1>
-            <p className="text-lg md:text-xl text-gray-950 mb-8">
-              A CBD vagy kannabidiol a kannabisz növényből származik. Ez az a növény, amely a sokat emlegetett pszichoaktív THC-t is tartalmazza.
+            <p className="text-lg md:text-xl text-gray-600 mb-8">
+              Explore our curated collection of premium tech gadgets and accessories. 
+              Find the perfect device to enhance your digital lifestyle.
             </p>
-            <p className="text-lg md:text-xl text-gray-950 mb-8">
-              A CBD olaj azonban kevesebb mint 0,2% THC-t tartalmaz, vagy egyáltalán nem tartalmaz THC-t. Általában más olajokkal, például kendermagolajjal keverik. Nem pszichoaktív és nem okoz függőséget, de a fogyasztók számos jelentés szerint pozitív előnyökről számolnak be.
-            </p>
-            <Link to="/products">
-              <Button variant="green"size="lg" className="animate-fade-in">
-                Termék megtekintése
-              </Button>
-            </Link>
+            <Button size="lg" className="animate-fade-in">
+              Shop Now
+            </Button>
           </div>
           <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/7l4z1piufjU"
+              src="https://www.youtube.com/embed/jfKfPfyJRdk"
               title="Product Showcase"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
-
         </div>
       </div>
     </div>

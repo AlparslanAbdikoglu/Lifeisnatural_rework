@@ -4,40 +4,41 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-white font-semibold mb-4">A life is natural:</h3>
+            <h3 className="text-white font-semibold mb-4">About Us</h3>
             <p className="text-sm">
-              Life Is Natural CBD kávébolt és webshop.
+              TechStore is your one-stop destination for premium tech products and accessories.
             </p>
-
           </div>
-
           <div>
-            <h3 className="text-white font-semibold mb-4">Fontos Linkek</h3>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="/szallitas" className="hover:text-white">Szállítással kapcsolatos információk</a></li>
-              <li><a href="/aszf" className="hover:text-white">Adatvédelmi szabályzat és általános feltételek</a></li>
-              <li><a href="/contacts" className="hover:text-white">Kapcsolat</a></li>
+              <li><a href="#" className="hover:text-white">Home</a></li>
+              <li><a href="#" className="hover:text-white">Products</a></li>
+              <li><a href="#" className="hover:text-white">About</a></li>
+              <li><a href="#" className="hover:text-white">Contact</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-4">Kapcsolat</h3>
+            <h3 className="text-white font-semibold mb-4">Customer Service</h3>
             <ul className="space-y-2 text-sm">
-              <li>Email: support@lifeisnatural.eu</li>
-              <li>Keress minket bizalommal: Pozsonyi út 30</li>
-              <li>1137 Budapest</li>
+              <li><a href="#" className="hover:text-white">Shipping Info</a></li>
+              <li><a href="#" className="hover:text-white">Returns</a></li>
+              <li><a href="#" className="hover:text-white">FAQ</a></li>
+              <li><a href="#" className="hover:text-white">Support</a></li>
             </ul>
           </div>
-          <div className="flex justify-center items-center mt-8">
-          <img
-            src="/images/logo.webp"  // Replace with your logo's actual path
-            alt="Life is Natural Logo"
-            className="h-20"        // Adjust the height of the logo as needed
-          />
+          <div>
+            <h3 className="text-white font-semibold mb-4">Contact Info</h3>
+            <ul className="space-y-2 text-sm">
+              <li>Email: support@techstore.com</li>
+              <li>Phone: (555) 123-4567</li>
+              <li>Address: 123 Tech Street</li>
+              <li>City, State 12345</li>
+            </ul>
+          </div>
         </div>
-        </div>
-        
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-          <p>&copy; 2025 Life is Natural. All rights reserved.</p>
+          <p>&copy; 2024 TechStore. All rights reserved.</p>
         </div>
       </div>
     </footer>
