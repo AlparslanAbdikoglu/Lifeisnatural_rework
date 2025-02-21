@@ -1,7 +1,9 @@
+
 import { ShoppingCart, Search } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { useCart } from '../store/useCart';
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const { items, toggleCart } = useCart();
@@ -12,12 +14,12 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
-            <h1 className="text-2xl font-bold text-primary">TechStore</h1>
+            <Link to="/" className="text-2xl font-bold text-primary">TechStore</Link>
             <div className="hidden md:flex items-center gap-6">
-              <a href="#" className="text-gray-600 hover:text-primary">Home</a>
-              <a href="#" className="text-gray-600 hover:text-primary">Products</a>
-              <a href="#" className="text-gray-600 hover:text-primary">About</a>
-              <a href="#" className="text-gray-600 hover:text-primary">Contact</a>
+              <Link to="/" className="text-gray-600 hover:text-primary">Home</Link>
+              <Link to="/products" className="text-gray-600 hover:text-primary">Products</Link>
+              <Link to="/about" className="text-gray-600 hover:text-primary">About</Link>
+              <Link to="/contact" className="text-gray-600 hover:text-primary">Contact</Link>
             </div>
           </div>
           
