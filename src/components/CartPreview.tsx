@@ -9,9 +9,9 @@ export const CartPreview = () => {
 
   return (
     <div className="cart-preview">
-      <h2 className="text-lg font-bold mb-4">Shopping Cart</h2>
+      <h2 className="text-lg font-bold mb-4">Bevásároló kosár</h2>
       {items.length === 0 ? (
-        <p>Your cart is empty</p>
+        <p>Kosarad üres</p>
       ) : (
         <>
           {items.map((item) => (
@@ -41,7 +41,7 @@ export const CartPreview = () => {
               <span className="font-bold">Total:</span>
               <span className="font-bold">${total.toFixed(2)}</span>
             </div>
-            <Button className="w-full">Checkout</Button>
+            <Button className="w-full">Kifizetés</Button>
           </div>
         </>
       )}

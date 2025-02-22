@@ -11,15 +11,15 @@ const Index = () => {
   const featuredProducts = [
     {
       id: 1,
-      name: "Featured CBD Coffee",
-      price: 34.99,
+      name: "CBD Ezustkolloid kávé kapszula",
+      price: 3000,
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
       description: "Our signature CBD-infused coffee blend"
     },
     {
       id: 2,
-      name: "Premium CBD Tea",
-      price: 29.99,
+      name: "Premium CBD Arany kávé kapszula",
+      price: 3000,
       image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
       description: "Relaxing CBD tea for your daily wellness"
     }
