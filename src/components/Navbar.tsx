@@ -38,18 +38,18 @@ export const Navbar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="relative">
-                  <Flag className="h-5 w-5" />
+                  {i18n.language === 'hu' ? '🇭🇺' : '🇬🇧'}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 <DropdownMenuItem onClick={() => changeLanguage('hu')}
                   className="flex items-center gap-2 cursor-pointer">
-                  <Flag className="h-4 w-4" />
+                  <span>🇭🇺</span>
                   <span>Magyar</span>
                 </DropdownMenuItem>
                 <DropdownMenuItem onClick={() => changeLanguage('en')}
                   className="flex items-center gap-2 cursor-pointer">
-                  <Flag className="h-4 w-4" />
+                  <span>🇬🇧</span>
                   <span>English</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
