@@ -1,14 +1,24 @@
 
-import { ShoppingCart, LogIn } from 'lucide-react';
+import { ShoppingCart, LogIn, Flag } from 'lucide-react';
 import { Button } from './ui/button';
 import { useCart } from '../store/useCart';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export const Navbar = () => {
   const { items, toggleCart } = useCart();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-40">
@@ -25,6 +35,25 @@ export const Navbar = () => {
           </div>
           
           <div className="flex items-center gap-4">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className="relative">
+                  <Flag className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => changeLanguage('hu')}
+                  className="flex items-center gap-2 cursor-pointer">
+                  <Flag className="h-4 w-4" />
+                  <span>Magyar</span>
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => changeLanguage('en')}
+                  className="flex items-center gap-2 cursor-pointer">
+                  <Flag className="h-4 w-4" />
+                  <span>English</span>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <Button
               variant="ghost"
               size="icon"
