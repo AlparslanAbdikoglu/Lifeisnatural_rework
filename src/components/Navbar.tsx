@@ -3,9 +3,11 @@ import { ShoppingCart, LogIn } from 'lucide-react';
 import { Button } from './ui/button';
 import { useCart } from '../store/useCart';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
   const { items, toggleCart } = useCart();
+  const { t } = useTranslation();
   const itemCount = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -15,10 +17,10 @@ export const Navbar = () => {
           <div className="flex items-center gap-8">
             <Link to="/" className="text-2xl font-bold text-primary">Life is Natural</Link>
             <div className="hidden md:flex items-center gap-6">
-              <Link to="/" className="text-gray-600 hover:text-primary">Home</Link>
-              <Link to="/products" className="text-gray-600 hover:text-primary">Products</Link>
-              <Link to="/about" className="text-gray-600 hover:text-primary">About</Link>
-              <Link to="/contact" className="text-gray-600 hover:text-primary">Contact</Link>
+              <Link to="/" className="text-gray-600 hover:text-primary">{t('nav.home')}</Link>
+              <Link to="/products" className="text-gray-600 hover:text-primary">{t('nav.products')}</Link>
+              <Link to="/about" className="text-gray-600 hover:text-primary">{t('nav.about')}</Link>
+              <Link to="/contact" className="text-gray-600 hover:text-primary">{t('nav.contact')}</Link>
             </div>
           </div>
           

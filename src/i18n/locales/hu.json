@@ -1,0 +1,24 @@
+
+{
+  "nav": {
+    "home": "Főoldal",
+    "products": "Termékek",
+    "about": "Rólunk",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "title": "Fedezze fel nagyszerű termékeinket",
+    "description": "Fedezze fel válogatott CBD kávé és tea termékeinket. Találja meg a tökéletes terméket életmódjához.",
+    "cta": "Vásároljon most"
+  },
+  "products": {
+    "featured": "Kiemelt termékek",
+    "addToCart": "Kosárba"
+  },
+  "footer": {
+    "about": "Rólunk",
+    "customerService": "Ügyfélszolgálat",
+    "contactInfo": "Kapcsolat",
+    "rights": "© 2024 Life is Natural. Minden jog fenntartva."
+  }
+}

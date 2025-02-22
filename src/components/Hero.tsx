@@ -1,21 +1,23 @@
 
 import { Button } from './ui/button';
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative bg-gradient-to-r from-green-50 to-green-100 py-20 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold text-green-600 mb-6">
-              Discover Amazing Tech Products
+              {t('hero.title')}
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8">
-              Explore our curated collection of premium tech gadgets and accessories. 
-              Find the perfect device to enhance your digital lifestyle.
+              {t('hero.description')}
             </p>
             <Button size="lg" className="bg-green-600 hover:bg-green-700">
-              Shop Now
+              {t('hero.cta')}
             </Button>
           </div>
           <div className="aspect-video rounded-lg overflow-hidden shadow-xl">

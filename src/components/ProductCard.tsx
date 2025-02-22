@@ -3,6 +3,7 @@ import { Product } from '../data/products';
 import { useCart } from '../store/useCart';
 import { Button } from './ui/button';
 import { ShoppingCart } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface ProductCardProps {
   product: Product;
@@ -10,6 +11,7 @@ interface ProductCardProps {
 
 export const ProductCard = ({ product }: ProductCardProps) => {
   const addItem = useCart((state) => state.addItem);
+  const { t } = useTranslation();
 
   return (
     <div className="product-card bg-white rounded-lg overflow-hidden">
@@ -30,7 +32,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700"
           >
             <ShoppingCart className="h-4 w-4" />
-            Add to Cart
+            {t('products.addToCart')}
           </Button>
         </div>
       </div>

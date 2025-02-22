@@ -1,0 +1,24 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover Amazing Tech Products",
+    "description": "Explore our curated collection of premium tech gadgets and accessories. Find the perfect device to enhance your digital lifestyle.",
+    "cta": "Shop Now"
+  },
+  "products": {
+    "featured": "Featured Products",
+    "addToCart": "Add to Cart"
+  },
+  "footer": {
+    "about": "About Us",
+    "customerService": "Customer Service",
+    "contactInfo": "Contact Info",
+    "rights": "© 2024 Life is Natural. All rights reserved."
+  }
+}
