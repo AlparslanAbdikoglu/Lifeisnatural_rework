@@ -1,3 +1,4 @@
+
 import { Product } from '../data/products';
 import { useCart } from '../store/useCart';
 import { Button } from './ui/button';
@@ -26,7 +27,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
             onClick={() => {
               addItem(product);
             }}
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 bg-green-600 hover:bg-green-700"
           >
             <ShoppingCart className="h-4 w-4" />
             Add to Cart
