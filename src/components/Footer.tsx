@@ -1,3 +1,4 @@
+
 export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -18,10 +19,9 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-white">Kapcsolat</a></li>
             </ul>
           </div>
-          <div>
-            
-            <h3 className="text-white font-semibold justify-end">További infó:</h3>
-            <ul className="text-white font-semibold justify-items-center">
+          <div className="md:col-span-2">
+            <h3 className="text-white font-semibold mb-4">További infó:</h3>
+            <ul className="text-sm">
               <li>Email: support@lifeisnatural.eu</li>
               <li>Cím: Poszonyi út</li>
               <li>Budapest</li>

@@ -23,7 +23,7 @@ export const Hero = () => {
           <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
             <iframe
               className="w-full h-full"
-              src="https://youtu.be/wgAIqKJA4Sk?si=efGVOGenF_JNNwRL"
+              src="https://www.youtube.com/embed/wgAIqKJA4Sk"
               title="Product Showcase"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
