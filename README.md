@@ -1,5 +1,9 @@
 E-Commerce Storefront with Medusa.js, React, and Docker 🚀
-Welcome to the E-Commerce Storefront project! This repository is a work-in-progress (WIP) to create a fully functional, scalable e-commerce platform using Medusa.js as the backend, React as the frontend, and Docker for containerization. The project is designed to be deployed with a reverse proxy powered by Traefik and utilizes Supabase PostgreSQL as the database.
+Welcome to the E-Commerce Storefront project! This repository is a work-in-progress (WIP) to create a fully functional, scalable e-commerce platform using Medusa.js as the backend, React as the frontend, and Docker for containerization. 
+
+The project is designed to be deployed with a reverse proxy powered by Traefik and utilizes Supabase PostgreSQL as the database.
+
+
 
 Project Overview ✨
 This project aims to integrate cutting-edge technologies to build a modern e-commerce storefront. The architecture consists of two main parts:
@@ -25,7 +29,8 @@ However, there are still some areas to be completed, including:
 
 Finalizing the database setup with Supabase.
 Optimizing the deployment for production.
-Additional configuration for scaling and improving app performance.
+Additional configuration for scaling and improving app performance with docker.
+
 Technologies Used 🛠️
 Frontend: React.js
 Backend: Medusa.js
