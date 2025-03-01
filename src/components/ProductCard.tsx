@@ -13,8 +13,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const addItem = useCart((state) => state.addItem);
   const { t } = useTranslation();
 
-  // Format price from cents to dollars/euros
-  const formattedPrice = (product.price / 100).toFixed(2);
+  // Format price from cents to HUF
+  const formattedPrice = `${product.price} Ft`;
 
   return (
     <div className="product-card bg-white rounded-lg overflow-hidden shadow-md">
@@ -30,7 +30,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
         <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
         <p className="text-sm text-gray-600 mb-4">{product.description || 'No description available'}</p>
         <div className="flex items-center justify-between">
-          <span className="text-lg font-bold">${formattedPrice}</span>
+          <span className="text-lg font-bold">{formattedPrice}</span>
           <Button
             onClick={() => {
               addItem(product);

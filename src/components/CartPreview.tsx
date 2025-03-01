@@ -34,7 +34,7 @@ export const CartPreview = () => {
               <div className="flex-1">
                 <h3 className="text-sm font-medium">{item.name}</h3>
                 <p className="text-sm text-gray-600">
-                  {item.quantity} x ${(item.price / 100).toFixed(2)}
+                  {item.quantity} x {item.price} Ft
                 </p>
               </div>
               <Button
@@ -49,7 +49,7 @@ export const CartPreview = () => {
           <div className="mt-4 pt-4 border-t">
             <div className="flex justify-between items-center mb-4">
               <span className="font-bold">Total:</span>
-              <span className="font-bold">${(total / 100).toFixed(2)}</span>
+              <span className="font-bold">{total} Ft</span>
             </div>
             <Button className="w-full bg-green-600 hover:bg-green-700">Kifizetés</Button>
           </div>
