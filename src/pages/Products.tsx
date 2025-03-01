@@ -24,7 +24,7 @@ const Products = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-24">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Our Products</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">Termékeink</h1>
         
         {isLoading ? (
           <div className="flex justify-center items-center py-20">

@@ -12,33 +12,24 @@ export const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Linkek</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white">Home</a></li>
-              <li><a href="#" className="hover:text-white">Products</a></li>
-              <li><a href="#" className="hover:text-white">About</a></li>
-              <li><a href="#" className="hover:text-white">Contact</a></li>
+              <li><a href="#" className="hover:text-white">Kezdőlap</a></li>
+              <li><a href="#" className="hover:text-white">Termékek</a></li>
+              <li><a href="#" className="hover:text-white">Rólunk</a></li>
+              <li><a href="#" className="hover:text-white">Kapcsolat</a></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-4">Customer Service</h3>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white">Shipping Info</a></li>
-              <li><a href="#" className="hover:text-white">Returns</a></li>
-              <li><a href="#" className="hover:text-white">FAQ</a></li>
-              <li><a href="#" className="hover:text-white">Support</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-white font-semibold mb-4">Contact Info</h3>
-            <ul className="space-y-2 text-sm">
-              <li>Email: support@techstore.com</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Address: 123 Tech Street</li>
-              <li>City, State 12345</li>
+            
+            <h3 className="text-white font-semibold justify-end">További infó:</h3>
+            <ul className="text-white font-semibold justify-items-center">
+              <li>Email: support@lifeisnatural.eu</li>
+              <li>Cím: Poszonyi út</li>
+              <li>Budapest</li>
             </ul>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-          <p>&copy; 2024 TechStore. All rights reserved.</p>
+          <p>&copy; 2025 Life is Natural. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -10,21 +10,21 @@ const About = () => {
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-8">About Us</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-8">Rólunk:</h1>
             <div className="prose prose-lg">
               <p className="mb-6">
-                Life is Natural is dedicated to bringing you the highest quality CBD-infused beverages.
-                Our mission is to enhance your daily wellness routine with carefully crafted products
-                that combine the benefits of CBD with premium coffee and tea blends.
+              A Life is Natural célja, hogy a legjobb minőségű CBD-vel dúsított italokat kínálja Önnek.
+                Küldetésünk, hogy gondosan kidolgozott termékekkel fokozzuk a napi wellness rutinját.
+                amelyek a CBD előnyeit prémium minőségű kávé- és teakeverékekkel kombinálják.
               </p>
               <p className="mb-6">
-                Founded in 2024, we work directly with organic farmers and use state-of-the-art
-                extraction methods to ensure the highest quality in every product we offer.
+              2024-ben alapítottuk, közvetlenül a biogazdákkal dolgozunk együtt, és a legmodernebb technológiát alkalmazzuk.
+              kivonási módszereket alkalmazunk, hogy minden általunk kínált termékünk a legmagasabb minőséget biztosítsuk.
               </p>
               <p className="mb-8">
-                Our commitment to quality, sustainability, and customer satisfaction drives
-                everything we do. We believe in transparency, education, and making premium CBD
-                products accessible to everyone.
+              A minőség, a fenntarthatóság és az ügyfélelégedettség iránti elkötelezettségünk vezérel minket
+                minden tevékenységünket. Hiszünk az átláthatóságban, az oktatásban, és a prémium CBD
+                termékeket mindenki számára elérhetővé tesszük.
               </p>
               <div className="flex space-x-6">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 

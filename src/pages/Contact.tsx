@@ -31,7 +31,7 @@ const Contact = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-3xl font-bold text-gray-900 mb-8">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-8">Kapcsolat</h1>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">

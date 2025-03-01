@@ -7,17 +7,17 @@ import { Product } from "../types/product";
 const fallbackProducts: Product[] = [
   {
     id: "prod_01",
-    name: "Organic Aloe Vera Gel",
+    name: "CBD Ezustkolloid kávé kapszula",
     price: 3900, // Price in HUF
-    image: "https://images.unsplash.com/photo-1626681444556-85e850412337",
-    description: "100% pure and natural aloe vera gel for skin and hair care.",
+    image: "/04.webp",
+    description: "( 1 doboz10 kapszula, 1 Csepp ) Gram: 50g CBD tartalom. 3,36 mg. Kávé származása: Costa Rica Származási ország: Magyarország Összetevők: őrölt pörkölt kávé (80% arabica és 20% rhobusta) és CBD olaj 5%-os oldatban. CBD-olajat tartalmazó őrölt pörkölt kávé Nespresso kompatibilis kapszulában.",
   },
   {
     id: "prod_02",
-    name: "Natural Coconut Oil",
+    name: "CBD Arany kávé kapszula",
     price: 4500, // Price in HUF
-    image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108",
-    description: "Cold-pressed organic coconut oil for cooking and beauty uses.",
+    image: "/04.webp",
+    description: "( 1 doboz10 kapszula, 1 Csepp ) Gram: 50g CBD tartalom. 3,36 mg. Kávé származása: Costa Rica Származási ország: Magyarország Összetevők: őrölt pörkölt kávé (80% arabica és 20% rhobusta) és CBD olaj 5%-os oldatban. CBD-olajat tartalmazó őrölt pörkölt kávé Nespresso kompatibilis kapszulában",
   }
 ];
 
