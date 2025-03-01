@@ -5,24 +5,25 @@ import { Navbar } from '@/components/Navbar';
 import { useProducts } from '@/hooks/useProducts';
 import { Loader2 } from 'lucide-react';
 import { useToast } from '@/components/ui/use-toast';
+import { CartPreview } from '@/components/CartPreview';
 
 const Products = () => {
   const { data: products = [], isLoading, error } = useProducts();
   const { toast } = useToast();
 
-  // Show error toast if fetch fails
-  if (error) {
+  // Show error toast if fetch fails, but only if we have no products
+  if (error && products.length === 0) {
     toast({
-      title: "Error loading products",
-      description: "Could not load products from the server. Please try again later.",
-      variant: "destructive",
+      title: "Using demo products",
+      description: "Connected to Supabase demo data instead of Medusa backend.",
+      variant: "default",
     });
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-24">
         <h1 className="text-3xl font-bold text-gray-900 mb-8">Our Products</h1>
         
         {isLoading ? (
@@ -41,6 +42,7 @@ const Products = () => {
           </div>
         )}
       </main>
+      <CartPreview />
       <Footer />
     </div>
   );
