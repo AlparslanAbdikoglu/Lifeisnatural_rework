@@ -1,69 +1,77 @@
-# Welcome to your Lovable project
+---
 
-## Project info
+# E-Commerce Storefront with Medusa.js, React, and Docker 🚀
 
-**URL**: https://lovable.dev/projects/04ce771f-ef41-48db-a5df-0de2c2c1c25e
+Welcome to the **E-Commerce Storefront** project!  
 
-## How can I edit this code?
+This repository is a **work-in-progress (WIP)** to create a fully functional, scalable e-commerce platform using **Medusa.js** as the backend, **React** as the frontend, and **Docker** for containerization and scaleability turning a cms based webshop to unique scaleable ecoomerce
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+The project is designed to be deployed with a **reverse proxy powered by Traefik** and utilizes **Supabase PostgreSQL** as the database.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/04ce771f-ef41-48db-a5df-0de2c2c1c25e) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Project Overview ✨
 
-**Use your preferred IDE**
+This project aims to integrate cutting-edge technologies to build a modern e-commerce storefront. The architecture consists of two main parts:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend (React)**: A storefront for customers to browse products, add items to their cart, and proceed to checkout with stripe.  
+- **Backend (Medusa API)**: A robust and customizable e-commerce backend that powers product management, customer orders, and more.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The entire app is containerized with **Docker**, and traffic is routed and managed with **Traefik** for SSL, load balancing, and reverse proxying.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Features 🚀
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+✅ **React Frontend**: A responsive and dynamic storefront for showcasing products.  
 
-# Step 3: Install the necessary dependencies.
-npm i
+✅ **Medusa.js Backend**: A headless e-commerce platform for managing the backend operations of the store.  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+✅ **Docker & Docker Compose**: For containerizing both the frontend and backend, ensuring portability and scalability.  
 
-**Edit a file directly in GitHub**
+✅ **Traefik Reverse Proxy**: To handle routing, SSL certificates (via Let's Encrypt), and automatic service discovery in the Docker containers.  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+✅ **Supabase PostgreSQL**: A scalable and managed PostgreSQL database for Medusa.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Current Status 🚧 (WIP)
 
-## What technologies are used for this project?
+The project is in **active development**, and the following features have already been set up:
 
-This project is built with .
+- ✅ built the frontend with mockup data
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+### To Be Completed:
 
-Simply open [Lovable](https://lovable.dev/projects/04ce771f-ef41-48db-a5df-0de2c2c1c25e) and click on Share -> Publish.
+- 🚧 Finalizing the database setup with **Supabase**  
+- 🚧 Optimizing the deployment for production  
+- 🚧 Additional configuration for scaling and improving app performance with Docker
 
-## I want to use a custom domain - is that possible?
+---
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Technologies Used 🛠️
+
+| Component      | Technology |
+|-----------------|------------|
+| Frontend        | React.js   |
+| Backend         | Medusa.js  |
+| Database        | Supabase (PostgreSQL) |
+| Containerization| Docker, Docker Compose |
+| Reverse Proxy   | Traefik (with Let's Encrypt SSL/ cloudflare cdn ) |
+
+---
+
+## Roadmap TODO 🛤️
+
+- ✅ Dockerize frontend and backend  
+- ✅ Set up PostgreSQL with Supabase  
+- ✅ Integrate Traefik for SSL and reverse proxy  
+- 🚧 Finalize production-ready deployment  
+- 🚧 Optimize for scalability and performance  
+- 🚧 Integrate additional features like payment gateways and user authentication
+
+---
