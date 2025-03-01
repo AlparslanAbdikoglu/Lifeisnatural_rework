@@ -1,5 +1,5 @@
 
-import { Product } from '../data/products_old';
+import { Product } from '../types/product';
 import { useCart } from '../store/useCart';
 import { Button } from './ui/button';
 import { ShoppingCart } from 'lucide-react';
@@ -13,18 +13,24 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const addItem = useCart((state) => state.addItem);
   const { t } = useTranslation();
 
+  // Format price from cents to dollars/euros
+  const formattedPrice = (product.price / 100).toFixed(2);
+
   return (
-    <div className="product-card bg-white rounded-lg overflow-hidden">
+    <div className="product-card bg-white rounded-lg overflow-hidden shadow-md">
       <img
-        src={product.image}
+        src={product.image || 'https://via.placeholder.com/400x300'}
         alt={product.name}
         className="w-full h-48 object-cover"
+        onError={(e) => {
+          (e.target as HTMLImageElement).src = 'https://via.placeholder.com/400x300';
+        }}
       />
       <div className="p-4">
         <h3 className="font-semibold text-lg mb-2">{product.name}</h3>
-        <p className="text-sm text-gray-600 mb-4">{product.description}</p>
+        <p className="text-sm text-gray-600 mb-4">{product.description || 'No description available'}</p>
         <div className="flex items-center justify-between">
-          <span className="text-lg font-bold">${product.price}</span>
+          <span className="text-lg font-bold">${formattedPrice}</span>
           <Button
             onClick={() => {
               addItem(product);

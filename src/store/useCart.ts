@@ -1,5 +1,6 @@
+
 import { create } from 'zustand';
-import { Product } from '../data/products_old';
+import { Product } from '../types/product';
 
 interface CartItem extends Product {
   quantity: number;
@@ -9,7 +10,7 @@ interface CartStore {
   items: CartItem[];
   showCart: boolean;
   addItem: (product: Product) => void;
-  removeItem: (productId: number) => void;
+  removeItem: (productId: string) => void;
   toggleCart: () => void;
   total: number;
 }
