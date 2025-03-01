@@ -1,6 +1,6 @@
 
 import { create } from 'zustand';
-import { products } from '../data/products';
+import { products } from '../data/products_old';
 
 interface SearchState {
   query: string;

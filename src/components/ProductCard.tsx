@@ -1,5 +1,5 @@
 
-import { Product } from '../data/products';
+import { Product } from '../data/products_old';
 import { useCart } from '../store/useCart';
 import { Button } from './ui/button';
 import { ShoppingCart } from 'lucide-react';
