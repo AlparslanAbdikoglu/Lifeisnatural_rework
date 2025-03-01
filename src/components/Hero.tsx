@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('common');
 
   return (
     <div className="relative bg-gradient-to-r from-green-50 to-green-100 py-20 mt-16">
@@ -23,7 +23,7 @@ export const Hero = () => {
           <div className="aspect-video rounded-lg overflow-hidden shadow-xl">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/wgAIqKJA4Sk"
+              src="https://www.youtube.com/embed/YqcKs7RWjKE"
               title="Product Showcase"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

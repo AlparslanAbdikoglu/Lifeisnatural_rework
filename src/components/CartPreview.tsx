@@ -1,24 +1,26 @@
 
+import { useTranslation } from 'react-i18next';
 import { useCart } from '../store/useCart';
 import { Button } from './ui/button';
 import { X } from 'lucide-react';
 
 export const CartPreview = () => {
   const { items, total, removeItem, showCart, toggleCart } = useCart();
+  const { t } = useTranslation('common');  // Ensure the correct namespace
 
   if (!showCart) return null;
 
   return (
     <div className="cart-preview fixed right-0 top-0 h-full bg-white shadow-lg p-6 w-80 z-50">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-lg font-bold">Bevásároló kosár</h2>
+        <h2 className="text-lg font-bold">{t('cartPreview.title')}</h2>
         <Button variant="ghost" size="icon" onClick={toggleCart}>
           <X className="h-5 w-5" />
         </Button>
       </div>
       
       {items.length === 0 ? (
-        <p>Kosarad üres</p>
+        <p>{t('cartPreview.emptyCart')}</p>
       ) : (
         <>
           {items.map((item) => (
@@ -46,12 +48,14 @@ export const CartPreview = () => {
               </Button>
             </div>
           ))}
-          <div className="mt-4 pt-4 border-t">
+        <div className="mt-4 pt-4 border-t">
             <div className="flex justify-between items-center mb-4">
-              <span className="font-bold">Total:</span>
-              <span className="font-bold">{total} Ft</span>
+              <span className="font-bold">{t('cartPreview.total')}</span>  {/* Translated total */}
+              <span className="font-bold">{total} {t('cartPreview.currency')}</span>  {/* Translated currency */}
             </div>
-            <Button className="w-full bg-green-600 hover:bg-green-700">Kifizetés</Button>
+            <Button className="w-full bg-green-600 hover:bg-green-700">
+              {t('cartPreview.checkout')} {/* Translated checkout button */}
+            </Button>
           </div>
         </>
       )}

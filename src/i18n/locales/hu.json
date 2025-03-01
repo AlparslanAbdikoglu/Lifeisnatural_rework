@@ -1,24 +1,72 @@
-
 {
   "nav": {
-    "home": "Főoldal",
+    "home": "Kezdőlap",
     "products": "Termékek",
     "about": "Rólunk",
     "contact": "Kapcsolat"
   },
   "hero": {
     "title": "Fedezze fel nagyszerű termékeinket",
-    "description": "Fedezze fel válogatott CBD kávé és tea termékeinket. Találja meg a tökéletes terméket életmódjához.",
+    "description": "Fedezze fel a CBD-vel dúsított kávé- és teakeverékeink gondosan válogatott kollekcióját. Találja meg a tökéletes terméket életstílusához.",
     "cta": "Vásároljon most"
   },
   "products": {
     "featured": "Kiemelt termékek",
+    "title": "termékek",
     "addToCart": "Kosárba"
   },
-  "footer": {
-    "about": "Rólunk",
-    "customerService": "Ügyfélszolgálat",
-    "contactInfo": "Kapcsolat",
-    "rights": "© 2024 Life is Natural. Minden jog fenntartva."
-  }
+  
+    "footer": {
+      "about": "Rólunk",
+      "description": "Life is Natural - CBD Kávék Webshopja",
+      "links": "Linkek",
+      "home": "Kezdőlap",
+      "products": "Termékek",
+      "contact": "Kapcsolat",
+      "information": "További infó",
+      "email": "Email",
+      "address": "Poszonyi út",
+      "rights": "© 2025 Life is Natural. Minden jog fenntartva."
+    },
+  
+  "about": {
+    "title": "Rólunk",
+    "description": {
+      "part1": "A Life is Natural célja, hogy a legjobb minőségű CBD-vel dúsított italokat kínálja Önnek. Küldetésünk, hogy gondosan kidolgozott termékekkel fokozzuk a napi wellness rutinját, amelyek a CBD előnyeit prémium minőségű kávé- és teakeverékekkel kombinálják.",
+      "part2": "2024-ben alapítottuk, közvetlenül a biogazdákkal dolgozunk együtt, és a legmodernebb technológiát alkalmazzuk. Kivonási módszereket alkalmazunk, hogy minden általunk kínált termékünk a legmagasabb minőséget biztosítsuk.",
+      "part3": "A minőség, a fenntarthatóság és az ügyfélelégedettség iránti elkötelezettségünk vezérel minket minden tevékenységünket. Hiszünk az átláthatóságban, az oktatásban, és a prémium CBD termékeket mindenki számára elérhetővé tesszük."
+    },
+    "imageAlt": "Irodánk és munkahelyünk"
+  },
+  "textSection": {
+        "title": "MI A CBD? Hogyan működik? Mire jó?",
+        "description": {
+          "part1": "A CBD vagy kannabidiol a kannabisz növényből származik. Ez az a növény, amely a sokat emlegetett pszichoaktív THC-t is tartalmazza.",
+          "part2": "A CBD olaj azonban kevesebb mint 0,2% THC-t tartalmaz, vagy egyáltalán nem tartalmaz THC-t. Általában más olajokkal, például kendermagolajjal keverik.",
+          "part3": "Nem pszichoaktív és nem okoz függőséget, de a fogyasztók számos jelentés szerint pozitív előnyökről számolnak be."
+        }
+      },
+      "cartPreview": {
+    "title": "Bevásároló kosár",
+    "emptyCart": "Kosarad üres",
+    "currency": "Ft",
+    "total": "Összesen",
+    "checkout": "Kifizetés"
+  },
+    "faq": {
+      "title": "Gyakran Ismételt Kérdések",
+      "question1": "Mennyi időt vesz igénybe a szállítás?",
+      "answer1": "A standard szállítás jellemzően 3-5 munkanapot vesz igénybe az Egyesült Államok kontinentális részén. Gyorsabb szállítási lehetőségek is elérhetőek a pénztárnál.",
+      "question2": "Mi a visszatérítési politika?",
+      "answer2": "30 napos visszatérítési politikát kínálunk minden bontatlan termékhez, eredeti csomagolásában. Hibás termékek esetén 90 napon belül ingyenes visszaküldést és cserét biztosítunk.",
+      "question3": "Kínáltok nemzetközi szállítást?",
+      "answer3": "Igen, a világ legtöbb országába szállítunk. A nemzetközi szállítási idők és költségek a helyszíntől függően változnak. A pontos szállítási becsléseket a pénztárnál adhatjuk meg.",
+      "question4": "A termékeitek garanciával vannak fedezve?",
+      "answer4": "Minden termékünk legalább 1 éves gyártói garanciával rendelkezik. A választott termékekhez kiterjesztett garancia opciók is elérhetőek a pénztárnál.",
+      "question5": "Hogyan követhetem a rendelésemet?",
+      "answer5": "Miután a rendelése kiszállításra került, követési számot fogsz kapni e-mailben. Ezt a számot felhasználhatod a csomag nyomon követésére a weboldalunkon vagy a szállító oldalán."
+    },
+    "contact": {
+      "title": "Kapcsolat"
+    }
 }

@@ -1,24 +1,71 @@
-
 {
-  "nav": {
-    "home": "Home",
-    "products": "Products",
-    "about": "About",
-    "contact": "Contact"
-  },
+  
+    "nav": {
+      "home": "Home",
+      "products": "Products",
+      "about": "About",
+      "contact": "Contact"
+    },  
   "hero": {
-    "title": "Discover Amazing Tech Products",
-    "description": "Explore our curated collection of premium tech gadgets and accessories. Find the perfect device to enhance your digital lifestyle.",
+    "title": "Discover our great products",
+    "description": "Explore our curated collection of CBD coffee and tea products. Find the perfect product for your lifestyle.",
     "cta": "Shop Now"
   },
   "products": {
     "featured": "Featured Products",
+    "title:": "Products",
     "addToCart": "Add to Cart"
   },
   "footer": {
     "about": "About Us",
-    "customerService": "Customer Service",
-    "contactInfo": "Contact Info",
-    "rights": "© 2024 Life is Natural. All rights reserved."
-  }
-}
+    "description": "Life is Natural - CBD Coffee Webshop",
+    "links": "Links",
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "information": "Additional Information",
+    "email": "Email",
+    "address": "Poszonyi Street",
+    "rights": "© 2025 Life is Natural. All rights reserved."
+  },
+    "about": {
+      "title": "About Us",
+      "description": {
+        "part1": "Life is Natural's goal is to provide you with the best quality CBD-infused beverages. Our mission is to enhance your daily wellness routine with carefully crafted products that combine the benefits of CBD with premium coffee and tea blends.",
+        "part2": "We were founded in 2024, working directly with organic farmers and using state-of-the-art technology. We apply extraction methods to ensure that every product we offer meets the highest quality standards.",
+        "part3": "Our commitment to quality, sustainability, and customer satisfaction drives every part of our operations. We believe in transparency, education, and making premium CBD products accessible to everyone."
+      },
+      "imageAlt": "Our office and workspace"
+    },
+      "textSection": {
+        "title": "what is CBD? How does it work? What is it good for?",
+        "description": {
+            "part1": "CBD, or cannabidiol, is derived from the cannabis plant. This is the plant that also contains the much-talked-about psychoactive THC.",
+            "part2": "However, CBD oil contains less than 0.2% THC or no THC at all. It is usually mixed with other oils, such as hemp seed oil.",
+            "part3": "It is non-psychoactive and non-addictive, but consumers report numerous positive benefits."
+        }
+      },
+      "cartPreview": {
+    "title": "Shopping Cart",
+    "emptyCart": "Your cart is empty",
+    "currency": "$",
+    "total": "Total",
+    "checkout": "Checkout"
+  },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "question1": "How long does shipping take?",
+      "answer1": "Standard shipping typically takes 3-5 business days within the continental US. Express shipping options are available at checkout for faster delivery.",
+      "question2": "What is your return policy?",
+      "answer2": "We offer a 30-day return policy for all unopened items in their original packaging. For defective items, we provide free returns and exchanges within 90 days of purchase.",
+      "question3": "Do you offer international shipping?",
+      "answer3": "Yes, we ship to most countries worldwide. International shipping times and costs vary by location. Specific delivery estimates will be provided at checkout.",
+      "question4": "Are your products covered by warranty?",
+      "answer4": "All our products come with a minimum 1-year manufacturer's warranty. Extended warranty options are available for select items at checkout.",
+      "question5": "How can I track my order?",
+      "answer5": "Once your order ships, you'll receive a tracking number via email. You can use this number to track your package on our website or the carrier's site."
+    },
+    "contact": {
+      "title": "conaact"
+    }
+    }

@@ -1,23 +1,18 @@
-
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import enTranslations from './locales/en.json';
-import huTranslations from './locales/hu.json';
+import en from './locales/en.json';
+import hu from './locales/hu.json';
 
-i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: enTranslations,
+i18n
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: { common: en },
+      hu: { common: hu }
     },
-    hu: {
-      translation: huTranslations,
-    },
-  },
-  lng: 'hu', // default language
-  fallbackLng: 'en',
-  interpolation: {
-    escapeValue: false,
-  },
-});
-
-export default i18n;
+    lng: 'hu', // Default language
+    fallbackLng: 'en', // Fallback language in case a translation is missing
+    interpolation: {
+      escapeValue: false
+    }
+  });
