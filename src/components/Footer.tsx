@@ -1,3 +1,4 @@
+
 import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
@@ -22,9 +23,9 @@ export const Footer = () => {
           </div>
           <div className="md:col-span-2">
             <h3 className="text-white font-semibold mb-4">{t('footer.information')}</h3>
-            <ul className="text-sm">
+            <ul className="text-sm space-y-3">
               <li>{t('footer.email')}: support@lifeisnatural.eu</li>
-              <li>{t('footer.address')}</li>
+              <li>Poszonyi út</li>
               <li>Budapest</li>
             </ul>
           </div>
