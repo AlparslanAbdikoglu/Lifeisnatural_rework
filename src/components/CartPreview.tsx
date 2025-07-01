@@ -3,12 +3,19 @@ import { useTranslation } from 'react-i18next';
 import { useCart } from '../store/useCart';
 import { Button } from './ui/button';
 import { X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const CartPreview = () => {
   const { items, total, removeItem, showCart, toggleCart } = useCart();
-  const { t } = useTranslation('common');  // Ensure the correct namespace
+  const { t } = useTranslation('common');
+  const navigate = useNavigate();
 
   if (!showCart) return null;
+
+  const handleCheckout = () => {
+    navigate('/checkout');
+    toggleCart(); // Close the cart preview
+  };
 
   return (
     <div className="cart-preview fixed right-0 top-0 h-full bg-white shadow-lg p-6 w-80 z-50">
@@ -50,11 +57,14 @@ export const CartPreview = () => {
           ))}
         <div className="mt-4 pt-4 border-t">
             <div className="flex justify-between items-center mb-4">
-              <span className="font-bold">{t('cartPreview.total')}</span>  {/* Translated total */}
-              <span className="font-bold">{total} {t('cartPreview.currency')}</span>  {/* Translated currency */}
+              <span className="font-bold">{t('cartPreview.total')}</span>
+              <span className="font-bold">{total} {t('cartPreview.currency')}</span>
             </div>
-            <Button className="w-full bg-green-600 hover:bg-green-700">
-              {t('cartPreview.checkout')} {/* Translated checkout button */}
+            <Button 
+              onClick={handleCheckout}
+              className="w-full bg-green-600 hover:bg-green-700"
+            >
+              {t('cartPreview.checkout')}
             </Button>
           </div>
         </>
